@@ -1,183 +1,235 @@
 
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-</style>
-<body>
+    <title>Johnson, Joseph, Daly Dishes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {font-family: "Times New Roman", Georgia, Serif;}
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+    </style>
+    <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Johnson, Joseph, Daly Dishes</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#entrees" class="w3-bar-item w3-button">Entrées</a>
-        <a href="#dessert" class="w3-bar-item w3-button">Desserts</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+                <a href="#home" class="w3-bar-item w3-button">Johnson, Joseph, Daly Dishes</a>
+                <!-- Right-sided navbar links. Hide them on small screens -->
+                <div class="w3-right w3-hide-small">
+                    <a href="#about" class="w3-bar-item w3-button">About</a>
+                    <a href="#goals" class="w3-bar-item w3-button">Our Goals</a>
+                    <a href="#entrees" class="w3-bar-item w3-button">Entrées</a>
+                    <a href="#dessert" class="w3-bar-item w3-button">Desserts</a>
+                    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+                </div>
+            </div>
+        </div>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Le Catering</h1>
-  </div>
-</header>
+        <!-- Header -->
+        <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+              <!--Slideshow Container-->
+            <div class="slideshow-container">
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
+                <!--SLIDE #1-->
+                <div class="mySlides fade">
+                    <img src="slideshow-test-img/purple.jpg" style="width:100%">
+                    <div class="text"><h3>Purple</h3></div>
+                </div>
+                <!--SLIDE #2-->
+                <div class="mySlides fade">
+                    <img src="slideshow-test-img/Navy.jpg" style="width:100%">
+                    <div class="text"><h3>Navy</h3></div>
+                </div>
+                <!--SLIDE #3-->
+                <div class="mySlides fade">
+                    <img src="slideshow-test-img/green.jpg" style="width:100%">
+                    <div class="text"><h3>Green</h3></div>
+                </div>
+                <!--SLIDE #4-->
+                <div class="mySlides fade">
+                    <img src="slideshow-test-img/black.jpg" style="width:100%">
+                    <div class="text"><h3>Black</h3></div>
+                </div>
 
-  <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
-    </div>
+                <!-- Next and previous buttons -->
+                <a class="prev"
+                   onclick="plusSlides(-1)">&#9665;</a>
+                <a class="next" onclick="plusSlides(1)">&#9655;</a>
+            </div>
+            <br>
 
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">About Us</h1><br>
-      <h5 class="w3-center">Tradition since 2019</h5>
-      <p class="w3-large">Kylie, Hayilice, and Samantha started off in the small state of Massachusetts. Their goal was to bring the special taste of the food held in their restaurant comes from all the different places located around the world all the way from France to Thailand. It all started when they went on vacation to Honolulu, Hawaii. All they wanted was food from home and came to the realization that everyone wants a piece of wherever they went. The food we carry in Johnson, Joseph Daly Dishes consists of homemade recipes from generations before us. We recognized that having a piece of home travel with you is a very important part of a vacation so every item on our menu costs less than twenty dollars which goes toward funding special causes such as saving the marine life and coral reefs</p>
-    </div>
-  </div>
-  
-  <hr>
-  
-  <!-- Entrées Section -->
-  
-  <!-- First Photo Grid-->
-    <h1>Entrées</h1>
-  <div class="w3-row-padding w3-padding-16 w3-center" id="entrees">
-    <div class="w3-quarter">
-      <img src="img/Poke-Bowl-Snapwire.jpg" alt="Poke Bowls" style="width:100%">
-      <h3>Poke Bowls</h3>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+        </header>
+
+        <!-- Page content -->
+        <div class="w3-content" style="max-width:1100px">
+
+            <!-- About Section -->
+            <div class="w3-row w3-padding-64" id="about">
+                <div class="w3-col m6 w3-padding-large w3-hide-small">
+                    <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+                </div>
+
+                <div class="w3-col m6 w3-padding-large">
+                    <h1 class="w3-center">About Us</h1><br>
+                    <h5 class="w3-center">Tradition since 2019</h5>
+                    <p class="w3-large">Kylie, Hayilice, and Samantha started off in the small state of Massachusetts. Their goal was to bring the special taste of the food held in their restaurant comes from all the different places located around the world all the way from France to Thailand. It all started when they went on vacation to Honolulu, Hawaii. All they wanted was food from home and came to the realization that everyone wants a piece of wherever they went. The food we carry in Johnson, Joseph Daly Dishes consists of homemade recipes from generations before us. We recognized that having a piece of home travel with you is a very important part of a vacation so every item on our menu costs less than twenty dollars which goes toward funding special causes such as saving the marine life and coral reefs</p>
+                </div>
+            </div>
+            <!-- Our Goals Section -->
+              <!-- About Section -->
+            <div class="w3-row w3-padding-64" id="about">
+                <div class="w3-col m6 w3-padding-large">
+                  
+                </div>
+
+                <div class="w3-col m6 w3-padding-large">
+                    <h1 class="w3-center">Our Goals</h1><br>
+                    <ol>
+                        <li>To deliver delicious food to families in need. </li>
+                        <li>We are a small, family-friendly business providing jobs to people in Honolulu. </li>
+                        <li>To serve food from different places around the world to make customers feel at home. </li> 
+                    </ol>
         
-      <p>Poke is made from our local fish served either as an appetizer or as a main course and is always one of our customer’s favorites. </p>
-    </div>
-    <div class="w3-quarter">
-      <img src="img/Pasta-Akyurt.jpg" alt="Pasta" style="width:100%">
-      <h3>The Classic Pasta Dish</h3>
-      <p>This classic Italian dish uses fresh and tasty sun-riped tomatoes, with a little bit of garlic and fresh basil leaves. With a delicious combination of marinara sauce and penne pasta, this dish is always a winner.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="img/Hamburger-Mirhashemian.jpg" alt="Hamburger" style="width:100%">
-      <h3>The Hamburger</h3>
-      <p>Our freshly baked buns combined with rich vegetables from our local farm, served with your choice of meat to make a delicious USA hamburger.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="img/Falafel-Priske.jpg" alt="Falafel" style="width:100%">
-      <h3>Falafel</h3>
-      <p>This Middle Eastern classic meal is our deep-fried doughnut-shaped patty made from ground chickpeas, fava beans, or both, your choice! We add herbs, spices, and onion to the dough to add a splash of flavor. </p>
-    </div>
-  </div>
-    <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter">
-      <img src="img/Pot-au-feu.jpg" alt="Pot-au-feu" style="width:100%">
-      <h3>Pot-au-feu</h3>
-      <p>Pot-au-feu is a French beef stew. According to chef Raymond Blanc, pot-au-feu is "the quintessence of French family cuisine.” The dish has many variations; although, the one made by us is always enjoyed by our customers. </p>
-    </div>
-    <div class="w3-quarter">
-      <img src="img/Dumpling-Carol.jpg" alt="Dumplings" style="width:100%">
-      <h3>Dumplings</h3>
-      <p>This original Chinese meal consists of a broad classification for a dish that consists of pieces of dough wrapped around our delicious filling. Choices for the dough are our famous bread, flour or potatoes. There is the option to be filled with meat, fish, cheese, vegetables, fruits or sweets.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="img/Goulash.jpg" alt="Goulash" style="width:100%">
-      <h3>Goulash</h3>
-      <p>This Hungary plate consists of soup with meat and vegetables, seasoned with paprika and signature spices. </p>
-    </div>
-    <div class="w3-quarter">
-      <img src="img/Chilli-Crab.jpg" alt="Chilli Crab" style="width:100%">
-      <h3>Chilli Crab</h3>
-      <p>Chilli crab is a delightful Singaporean seafood dish. We make this dish with mud crabs which are stir-fried in a semi-thick, sweet and savory tomato-and-chili-based sauce. </p>
-    </div>
-  </div>
+                </div>
+            </div>
+            
+            
+            <!-- Entrées Section -->
+            <hr>
+            <h1>Entrées</h1>
 
- <!-- Dessert Section -->
-  
-  <!-- First Photo Grid-->
-    <h1>Dessert</h1>
-  <div class="w3-row-padding w3-padding-16 w3-center" id="dessert">
-    <div class="w3-quarter">
-      <img src="img/Liliko's%20Bar-devolk.jpg" alt="Lilikoʻi bars" style="width:100%">
-      <h3>Lilikoʻi bars</h3>
-      <p>Hawaii’s version of everyone’s favorite, lemon bars. Our buttery crust is layered with a sweet and tart lilikoʻi filling, otherwise known as passion fruit.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="img/Boston-Cream-pie.jpg" alt="Boston Cream Pie " style="width:100%">
-      <h3>Boston Cream Pie</h3>
-      <p>This Boston Cream Pie is a classic cake – not a pie at all! It’s a lovely vanilla cake layered with fresh pastry cream and chocolate ganache – all from scratch!</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="img/Apple%20Strudel.jpg" alt="Apple Strudel" style="width:100%">
-      <h3>Apple Strudel</h3>
-      <p>With a mix of apples and cinnamon, you'll be cutting yourself slice after slice without even thinking twice! This German recipe is especially popular in the fall, right when apple season starts to pick up steam.</p>
-      <p>What else?</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="img/Creme-Brulee-Munsell.jpg" alt="Crème brûlée" style="width:100%">
-      <h3>Crème brûlée</h3>
-      <p>A French classic is a delicious dessert that contains a rich custard tart topped with a texturally contrasting layer of hardened caramelized sugar.</p>
-    </div>
-  </div>
-        <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter">
-      <img src="img/Baklava.jpg" alt="Baklava" style="width:100%">
-      <h3>Baklava</h3>
-      <p>In Turkey, this desert is a popular dessert throughout the year. Baklava is a rich, sweet dessert pastry made of layers of filo filled with chopped nuts and sweetened and held together with syrup or honey.
-</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="img/Tres%20Leches.jpg" alt="Tres Leches" style="width:100%">
-      <h3>Tres Leches</h3>
-      <p>Tres Leches is a classic Spanish cake that consists of a sponge cake soaked in milk. With no butter added to this recipe, the Tres Leches cake is very light with many air bubbles.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="img/Cannolis.jpg" alt="Cannoli" style="width:100%">
-      <h3>Cannoli</h3>
-      <p>Cannolis are Italian pastries that originated on the island of Sicily. Cannolis consist of tube-shaped shells of fried pastry dough, filled with a sweet, creamy filling.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="img/Mochi.jpg" alt="Mochi" style="width:100%">
-      <h3>Mochi</h3>
-      <p>Mochi is a Japanese rice cake made of mochigome.This special rice is pounded into paste and molded into our delicious pastry shapes. </p>
-    </div>
-  </div>
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-64" id="contact">
-    <h1>Contact</h1><br>
-    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
-    <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
-    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
-    </form>
-  </div>
-  
-<!-- End page content -->
-</div>
+            <!-- First Photo Grid-->
+            
+            <div class="w3-row-padding w3-padding-16 w3-center" id="entrees">
+                <div class="w3-quarter">
+                    <img src="img/Poke-Bowl-Snapwire.jpg" alt="Poke Bowls" style="width:100%">
+                    <h3>Poke Bowls</h3>
 
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+                    <p>Poke is made from our local fish served either as an appetizer or as a main course and is always one of our customer’s favorites. </p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/Pasta-Akyurt.jpg" alt="Pasta" style="width:100%">
+                    <h3>The Classic Pasta Dish</h3>
+                    <p>This classic Italian dish uses fresh and tasty sun-riped tomatoes, with a little bit of garlic and fresh basil leaves. With a delicious combination of marinara sauce and penne pasta, this dish is always a winner.</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/Hamburger-Mirhashemian.jpg" alt="Hamburger" style="width:100%">
+                    <h3>The Hamburger</h3>
+                    <p>Our freshly baked buns combined with rich vegetables from our local farm, served with your choice of meat to make a delicious USA hamburger.</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/Falafel-Priske.jpg" alt="Falafel" style="width:100%">
+                    <h3>Falafel</h3>
+                    <p>This Middle Eastern classic meal is our deep-fried doughnut-shaped patty made from ground chickpeas, fava beans, or both, your choice! We add herbs, spices, and onion to the dough to add a splash of flavor. </p>
+                </div>
+            </div>
+            <!-- Second Photo Grid-->
+            <div class="w3-row-padding w3-padding-16 w3-center">
+                <div class="w3-quarter">
+                    <img src="img/Pot-au-feu.jpg" alt="Pot-au-feu" style="width:100%">
+                    <h3>Pot-au-feu</h3>
+                    <p>Pot-au-feu is a French beef stew. According to chef Raymond Blanc, pot-au-feu is "the quintessence of French family cuisine.” The dish has many variations; although, the one made by us is always enjoyed by our customers. </p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/Dumpling-Carol.jpg" alt="Dumplings" style="width:100%">
+                    <h3>Dumplings</h3>
+                    <p>This original Chinese meal consists of a broad classification for a dish that consists of pieces of dough wrapped around our delicious filling. Choices for the dough are our famous bread, flour or potatoes. There is the option to be filled with meat, fish, cheese, vegetables, fruits or sweets.</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/Goulash.jpg" alt="Goulash" style="width:100%">
+                    <h3>Goulash</h3>
+                    <p>This Hungary plate consists of soup with meat and vegetables, seasoned with paprika and signature spices. </p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/Chilli-Crab.jpg" alt="Chilli Crab" style="width:100%">
+                    <h3>Chilli Crab</h3>
+                    <p>Chilli crab is a delightful Singaporean seafood dish. We make this dish with mud crabs which are stir-fried in a semi-thick, sweet and savory tomato-and-chili-based sauce. </p>
+                </div>
+            </div>
+            <hr>
 
-</body>
+            <!-- Dessert Section -->
+
+            <!-- First Photo Grid-->
+            <h1>Dessert</h1>
+            <div class="w3-row-padding w3-padding-16 w3-center" id="dessert">
+                <div class="w3-quarter">
+                    <img src="img/Liliko's%20Bar-devolk.jpg" alt="Lilikoʻi bars" style="width:100%">
+                    <h3>Lilikoʻi bars</h3>
+                    <p>Hawaii’s version of everyone’s favorite, lemon bars. Our buttery crust is layered with a sweet and tart lilikoʻi filling, otherwise known as passion fruit.</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/Boston-Cream-pie.jpg" alt="Boston Cream Pie " style="width:100%">
+                    <h3>Boston Cream Pie</h3>
+                    <p>This Boston Cream Pie is a classic cake – not a pie at all! It’s a lovely vanilla cake layered with fresh pastry cream and chocolate ganache – all from scratch!</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/Apple%20Strudel.jpg" alt="Apple Strudel" style="width:100%">
+                    <h3>Apple Strudel</h3>
+                    <p>With a mix of apples and cinnamon, you'll be cutting yourself slice after slice without even thinking twice! This German recipe is especially popular in the fall, right when apple season starts to pick up steam.</p>
+                    <p>What else?</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/Creme-Brulee-Munsell.jpg" alt="Crème brûlée" style="width:100%">
+                    <h3>Crème brûlée</h3>
+                    <p>A French classic is a delicious dessert that contains a rich custard tart topped with a texturally contrasting layer of hardened caramelized sugar.</p>
+                </div>
+            </div>
+            <!-- Second Photo Grid-->
+            <div class="w3-row-padding w3-padding-16 w3-center">
+                <div class="w3-quarter">
+                    <img src="img/Baklava.jpg" alt="Baklava" style="width:100%">
+                    <h3>Baklava</h3>
+                    <p>In Turkey, this desert is a popular dessert throughout the year. Baklava is a rich, sweet dessert pastry made of layers of filo filled with chopped nuts and sweetened and held together with syrup or honey.
+                    </p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/Tres%20Leches.jpg" alt="Tres Leches" style="width:100%">
+                    <h3>Tres Leches</h3>
+                    <p>Tres Leches is a classic Spanish cake that consists of a sponge cake soaked in milk. With no butter added to this recipe, the Tres Leches cake is very light with many air bubbles.</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/Cannolis.jpg" alt="Cannoli" style="width:100%">
+                    <h3>Cannoli</h3>
+                    <p>Cannolis are Italian pastries that originated on the island of Sicily. Cannolis consist of tube-shaped shells of fried pastry dough, filled with a sweet, creamy filling.</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/Mochi.jpg" alt="Mochi" style="width:100%">
+                    <h3>Mochi</h3>
+                    <p>Mochi is a Japanese rice cake made of mochigome.This special rice is pounded into paste and molded into our delicious pastry shapes. </p>
+                </div>
+            </div>
+            <hr>
+            
+            <!-- Contact Section -->
+            <div class="w3-container w3-padding-64" id="contact">
+                <h1>Contact</h1><br>
+                <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+                <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+                <p>You can also contact us by phone at (978) 908-2874 or email josephjohnsondaly@catering.com, or you can send us a message here:</p>
+            </div>
+
+            <!-- End page content -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-light-grey w3-padding-32">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        </footer>
+
+    </body>
+    <script src="js/slideshow.js"></script>
 </html>
